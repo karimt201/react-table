@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { COLUMNS } from './components/columns';
+import MOCK_DATA from './components/MOCK_DATA.json';
+import { BasicTable } from './components/BasicTable';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      
+        
+        <div>
+          <BasicTable columns={COLUMNS} data={MOCK_DATA} />
+        </div>
+    
   );
 }
 
